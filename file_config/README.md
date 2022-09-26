@@ -1,1 +1,1 @@
-#config file in file.conf
+# config file in file.conf
