@@ -1,0 +1,7 @@
+27-09-2022 15:54:08 : INFO : Dat : <module> : 103 : Current Log Level : 10
+
+27-09-2022 15:54:08 : INFO : Dat : <module> : 107 : Addition of 10 & 20 is : 30.0
+
+27-09-2022 15:54:08 : INFO : Dat : <module> : 110 : Addition of '20' & 20 is : 40.0
+
+27-09-2022 15:54:08 : INFO : Dat : <module> : 113 : Addition of A & 20 is : None

@@ -1,1 +1,1 @@
-# config file in config.yaml
+# config file in dictionary with Hierarchy demo and filters config
