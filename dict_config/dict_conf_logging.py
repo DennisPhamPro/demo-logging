@@ -51,7 +51,7 @@ log_config = {
             # "filters": ["info"],
             "class": "logging.FileHandler",
             "level": "INFO",
-            "filename":("DAT_INFO_LEVEL" + str(datetime.now().strftime('_%Y_%M_%d_%H_%M_%S')) + ".log"),
+            "filename":(__name__ + str(datetime.now().strftime('%Y_%M_%d_%H_%M_%S')) + ".log"),
             "mode": "w"
         },
         "Phat_logger":{
