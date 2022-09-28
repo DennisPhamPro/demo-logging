@@ -1,0 +1,2 @@
+28-09-2022 09:44:53 : WARNING : Phat.child : add : 100 : Warning : Parameter A is passed as String. Future versions won't support it.
+28-09-2022 09:44:53 : ERROR : Phat.child : add : 110 : Error Type : ValueError, Error Message : could not convert string to float: 'A'

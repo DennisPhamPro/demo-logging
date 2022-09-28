@@ -16,14 +16,19 @@ log_config = {
     },
     "loggers":{
         "Dat":{
-            "handlers": ["console", "Dat_logger"],
-            "level": "DEBUG",
-            "propagate": False
-        },
-        "Phat":{
-            "handlers": ["console", "Phat_logger"],
+            "handlers": ["Dat_logger"],
             "level": "DEBUG",
             "propagate": True
+        },
+        "Phat":{
+            "handlers": ["Phat_logger"],
+            "level": "DEBUG",
+            "propagate": True
+        },
+        "Phat.child":{
+            "handlers": ["console", "Phat_child_logger"],
+            "level": "DEBUG",
+            "propagate": False
         }
     },
     "handlers":{
@@ -54,7 +59,14 @@ log_config = {
             "level": "WARNING",
             "filename":"PHAT_WARNING_LEVEL.log",
             "mode": "w"
-        }
+        },
+        "Phat_child_logger":{
+            "formatter": "std_out2",
+            "class": "logging.FileHandler",
+            "level": "WARNING",
+            "filename":"PHAT_CHILD_WARNING_LEVEL.log",
+            "mode": "w"
+        },
     },
     "formatters":{
         "std_out": {
@@ -80,7 +92,7 @@ dat_log = logging.getLogger("Dat")
 
 class Addition:
     def __init__(self):
-        self.phat_log = logging.getLogger("Phat") #This is a child logger of Phat 
+        self.phat_log = logging.getLogger("Phat.child") #This is a child logger of Phat 
         
     def add(self, a, b):
         self.phat_log.debug("Inside Addition Function")

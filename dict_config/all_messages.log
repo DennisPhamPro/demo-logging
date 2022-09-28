@@ -1,7 +1,7 @@
-27-09-2022 15:54:08 : DEBUG : Phat : add : 86 : Inside Addition Function
-27-09-2022 15:54:08 : INFO : Phat : add : 95 : Addition Function Completed Successfully
-27-09-2022 15:54:08 : DEBUG : Phat : add : 86 : Inside Addition Function
-27-09-2022 15:54:08 : WARNING : Phat : add : 88 : Warning : Parameter A is passed as String. Future versions won't support it.
-27-09-2022 15:54:08 : INFO : Phat : add : 95 : Addition Function Completed Successfully
-27-09-2022 15:54:08 : DEBUG : Phat : add : 86 : Inside Addition Function
-27-09-2022 15:54:08 : ERROR : Phat : add : 98 : Error Type : ValueError, Error Message : could not convert string to float: 'A'
+28-09-2022 09:44:53 : INFO : Dat : <module> : 115 : Current Log Level : 10
+
+28-09-2022 09:44:53 : INFO : Dat : <module> : 119 : Addition of 10 & 20 is : 30.0
+
+28-09-2022 09:44:53 : INFO : Dat : <module> : 122 : Addition of '20' & 20 is : 40.0
+
+28-09-2022 09:44:53 : INFO : Dat : <module> : 125 : Addition of A & 20 is : None
