@@ -1,5 +1,6 @@
 import logging
 from logging import config
+from datetime import datetime
 
 class InfoOnly(logging.Filter):
     def filter(self, record):
@@ -50,7 +51,7 @@ log_config = {
             # "filters": ["info"],
             "class": "logging.FileHandler",
             "level": "INFO",
-            "filename":"DAT_INFO_LEVEL.log",
+            "filename":("DAT_INFO_LEVEL" + str(datetime.now().strftime('_%Y_%M_%d_%H_%M_%S')) + ".log"),
             "mode": "w"
         },
         "Phat_logger":{
