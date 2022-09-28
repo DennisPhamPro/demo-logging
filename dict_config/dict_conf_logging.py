@@ -16,8 +16,8 @@ log_config = {
     },
     "formatters":{
         "std_out":{
-            "format":"%(asctime)s - %(levelname)s - %(module)s - %(funcName)s - %(lineno)s >> %(message)s",
-            "datefmt":"%d-%m-%Y %I:%M:%S"
+            "format":"%(asctime)s-%(levelname)s-%(lineno)s >>> %(message)s",
+            "datefmt":"%d-%m-%Y %H:%M:%S"
         }
     },
 }
